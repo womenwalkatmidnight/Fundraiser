@@ -414,7 +414,7 @@ function page(s){
     <form class="upi" id="upi-form" autocomplete="off">
       <label>Your name<input id="u-name" type="text" placeholder="Name" maxlength="40" required></label>
       <label class="anon"><input id="u-anon" type="checkbox"> Contribute anonymously (optional)</label>
-      <label>Where you are from (optional)<input id="u-place" type="text" placeholder="City or town" maxlength="40"></label>
+      <label>Where you are from <input id="u-place" type="text" placeholder="City or town" maxlength="40" required></label>
       <label>Amount you contributed (\u20b9)<input id="u-amt" type="number" inputmode="numeric" min="1" step="1" placeholder="500" required></label>
       <button class="pay" type="submit">I have contributed</button>
       <p class="hint" id="u-msg" role="status"></p>
