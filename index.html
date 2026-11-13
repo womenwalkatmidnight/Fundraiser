@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Women Walk at Midnight Turning Ten</title>
+<title>Women Walk at Midnight Turns Ten</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Tiro+Devanagari+Hindi&display=swap">
 <style>
 [hidden]{display:none!important}
@@ -457,7 +457,7 @@ function csvRows(t){
     else c+=ch; }
   if(c||r.length){r.push(c);rows.push(r);} return rows;
 }
-var SHOW_AMOUNT_FOR_ALL = false; // set true to show the amount for named contributors too
+var SHOW_AMOUNT_FOR_ALL = true; 
 function showGivers(list){
   var gl = document.getElementById('givers-list');
   if(gl) gl.innerHTML = list.map(function(d){ return '<li' + (d.anon || d.name === 'Anonymous' ? ' class="anon"' : '') + '><span class="gn">' + esc(d.name) + '</span>' + (d.place ? '<span class="gp">' + esc(d.place) + '</span>' : '') + ((SHOW_AMOUNT_FOR_ALL || d.anon || d.name === 'Anonymous') && Number(d.amt) > 0 ? '<span class="ga">' + inr(Number(d.amt)) + '</span>' : '') + '</li>'; }).join('');
